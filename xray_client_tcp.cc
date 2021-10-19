@@ -67,15 +67,15 @@ int main( int argc, char *argv[])
   for ( int i = 0; i < n+2; i++)
     {
       cs += buffer[i];
-      cout << i << " " << hex << setw(3) << int(buffer[i]) << dec;
-      if ( buffer[i] >= 32 ) cout << "  " << buffer[i]; //printable char
-      cout << endl;
+      //cout << i << " " << hex << setw(3) << int(buffer[i]) << dec;
+      //if ( buffer[i] >= 32 ) cout << "  " << buffer[i]; //printable char
+      //cout << endl;
     }
   cs = ( (0x100 -cs) & 0x7f) | 0x40;
 
   write (sockfd, buffer, n+2);
 
-  cout << "message sent." << endl;
+  //cout << "message sent." << endl;
 
   // we need to make a 2s timeout in case we never get a reply
   fd_set read_flag;
@@ -94,13 +94,13 @@ int main( int argc, char *argv[])
 
   n = read ( sockfd, buffer, MAXLINE);
 
-  for ( int i = 0; i < n; i++)
-    {
-      cout << i << " " << hex << setw(3) << int(buffer[i]) << dec;
-      if ( buffer[i] >= 32 ) cout << "  " << buffer[i];  // printable char
-      cout << endl;
-    }
-  cout << endl;
+  //for ( int i = 0; i < n; i++)
+  //  {
+  //    cout << i << " " << hex << setw(3) << int(buffer[i]) << dec;
+  //    if ( buffer[i] >= 32 ) cout << "  " << buffer[i];  // printable char
+  //    cout << endl;
+  //  }
+  //cout << endl;
 
   // now show us only the printable part
   for ( int i = 0; i < n; i++)

@@ -65,7 +65,7 @@ int main( int argc, char *argv[])
 	}
 	
       n = read ( in_fd, buffer, MAXLINE);
-      for ( int i = 0; i < n; i++)
+    for ( int i = 0; i < n; i++)
 	  {
 	    cout << i << " " << hex << setw(3) << int(buffer[i]) << dec;
 	    if ( buffer[i] >= 32 ) cout << "  " << buffer[i];  // printable char

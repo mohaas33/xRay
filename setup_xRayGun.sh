@@ -22,7 +22,7 @@
 ./xray_client_tcp 192.168.1.4 47,1,4000,
 
 # Turn high voltage ON
-./xray_client_tcp 192.168.1.4 99,1,
+#./xray_client_tcp 192.168.1.4 99,1,
 # Turn high voltage OFF
 #./xray_client_tcp 192.168.1.4 99,0,
 
