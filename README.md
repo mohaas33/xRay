@@ -4,9 +4,10 @@ This set of tools is providing control for the HV power supply. This power suppl
 
 Main commands list: [importantCommands.md](https://github.com/mohaas33/xRay/blob/main/importantCommands.md) 
 
-### **Monitoring**
+### **To compile code**
 
-`./monitorXRay.py &`
+Compilation of the C++ code:
+`make`
 
 ### **Scripts to setup tube**
 
@@ -25,3 +26,7 @@ Program Filament Preheat: 0.2 A (4095 = 10 A)
 Program Filament Current Limit: 1.7 A (4095 = 10 A)
 
 Program Filament Ramp Time: 4000 ms
+
+### **Monitoring**
+
+`./monitorXRay.py &`
